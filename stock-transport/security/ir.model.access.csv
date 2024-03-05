@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-stock-transport.access_stock_dock,access_stock_dock,stock-transport.model_stock_dock,base.group_user,1,1,1,1 
+access_stock.stock_dock,access_stock.stock_dock,model_stock_dock,base.group_user,1,1,1,1
