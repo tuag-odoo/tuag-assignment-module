@@ -9,8 +9,8 @@
                 <field name="dock_id"/>
                 <field name="vehicle_id"/>
                 <field name="vehicle_category_id"/>
-                <field name='volume' widget="progressbar"/>
-                <field name='weight' widget="progressbar"/>
+                <field name='volume' widget="progressbar" invisible= "vehicle_category_id == False"/>
+                <field name='weight' widget="progressbar" invisible= "vehicle_category_id == False"/>
             </xpath>
         </field>
     </record>

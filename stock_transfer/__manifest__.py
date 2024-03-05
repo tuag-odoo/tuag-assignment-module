@@ -6,5 +6,4 @@
     'data' : [
         'views/inherit_res_config_setting_view.xml',
     ],
-    "auto_install": True,
 }

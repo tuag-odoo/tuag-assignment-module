@@ -4,7 +4,7 @@ class InheritFleetCategory(models.Model):
     _inherit = "fleet.vehicle.model.category"
 
     max_weight = fields.Float(string="Max Weight (Kg)", store=True);
-    max_volume = fields.Float(string="Max Volume", store = True);
+    max_volume = fields.Float(string="Max Volume (m\u00B3)", store = True);
 
     @api.depends('max_weight', 'max_volume')
     def _compute_display_name(self):
