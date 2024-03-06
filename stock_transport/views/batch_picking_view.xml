@@ -6,9 +6,9 @@
         <field name="inherit_id" ref="stock_picking_batch.stock_picking_batch_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='scheduled_date']" position="after">
-                <field name="dock_id"/>
-                <field name="vehicle_id"/>
-                <field name="vehicle_category_id"/>
+                <field name="dock_id" placeholder="eg. dock 1"/>
+                <field name="vehicle_id" placeholder='Third party provider'/>
+                <field name="vehicle_category_id" placeholder='eg. Semi-truck'/>
                 <field name='volume' widget="progressbar" invisible= "vehicle_category_id == False"/>
                 <field name='weight' widget="progressbar" invisible= "vehicle_category_id == False"/>
             </xpath>
